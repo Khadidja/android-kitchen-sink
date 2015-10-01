@@ -13,4 +13,6 @@
     <string name="reusable_layout">Reusable Layout with merge</string>
     <string name="next_desc">Next</string>
     <string name="prev_desc">Prev</string>
+    <string name="title_activity_pull_to_refresh">PullToRefreshActivity</string>
+    <string name="pull_to_refresh">Pull/Swipe To Refresh</string>
 </resources>

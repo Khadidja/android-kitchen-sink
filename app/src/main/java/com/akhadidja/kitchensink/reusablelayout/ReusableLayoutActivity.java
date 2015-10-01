@@ -28,7 +28,7 @@ public class ReusableLayoutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_reusable_layout);
+        setContentView(R.layout.activity_reusable_layout);
         petsGallerySpinner = (GallerySpinner) findViewById(R.id.pets_gallery_spinner);
         petsGallerySpinner.setImages(petsImageIds);
         foodGallerySpinner = (GallerySpinner) findViewById(R.id.food_gallery_spinner);
