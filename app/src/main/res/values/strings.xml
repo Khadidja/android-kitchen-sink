@@ -10,4 +10,7 @@
     <string name="title_activity_splash_screen_result">SplashScreenResultActivity</string>
     <string name="title">European Countries According to Yahoo:</string>
     <string name="title_activity_reusable_layout">ReusableLayoutActivity</string>
+    <string name="reusable_layout">Reusable Layout with merge</string>
+    <string name="next_desc">Next</string>
+    <string name="prev_desc">Prev</string>
 </resources>

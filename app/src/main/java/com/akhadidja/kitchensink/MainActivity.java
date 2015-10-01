@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.akhadidja.kitchensink.reusablelayout.ReusableLayoutActivity;
 import com.akhadidja.kitchensink.splashscreen.SplashScreenActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,5 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void showSplashScreenActivity(View view) {
         startActivity(new Intent(this, SplashScreenActivity.class));
+    }
+
+    public void showReusableLayoutActivity(View view) {
+        startActivity(new Intent(this, ReusableLayoutActivity.class));
     }
 }

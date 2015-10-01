@@ -10,7 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,4 +17,12 @@
         android:id="@+id/splash_screen_button"
         android:layout_gravity="center_horizontal"
         android:onClick="showSplashScreenActivity"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reusable_layout"
+        android:id="@+id/reusable_layout_button"
+        android:layout_gravity="center_horizontal"
+        android:onClick="showReusableLayoutActivity"/>
 </LinearLayout>

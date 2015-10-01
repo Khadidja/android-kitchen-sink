@@ -1,0 +1,26 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageButton
+        android:id="@+id/gallery_spinner_view_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/gallery_spinner_view_current_imageView"
+        android:layout_toStartOf="@+id/gallery_spinner_view_current_imageView"
+        android:background="@null"
+        android:contentDescription="@string/prev_desc"
+        android:src="@mipmap/ic_prev" />
+
+    <ImageView
+        android:id="@+id/gallery_spinner_view_current_imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/gallery_spinner_view_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/next_desc"
+        android:src="@mipmap/ic_next" />
+</merge>
