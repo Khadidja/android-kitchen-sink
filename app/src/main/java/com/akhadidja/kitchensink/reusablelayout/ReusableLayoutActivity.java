@@ -3,11 +3,13 @@ package com.akhadidja.kitchensink.reusablelayout;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 
 import com.akhadidja.kitchensink.R;
 
 public class ReusableLayoutActivity extends AppCompatActivity {
 
+    Toolbar toolbar;
     private static final String STATE_PETS_POSITION = "pets_gallery_position";
     private static final String STATE_FOOD_POSITION = "food_gallery_position";
     private static final String SHARED_PREF = "My_Pref";
@@ -29,6 +31,8 @@ public class ReusableLayoutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reusable_layout);
+        toolbar = (Toolbar) findViewById(R.id.reusable_toolbar);
+        setSupportActionBar(toolbar);
         petsGallerySpinner = (GallerySpinner) findViewById(R.id.pets_gallery_spinner);
         petsGallerySpinner.setImages(petsImageIds);
         foodGallerySpinner = (GallerySpinner) findViewById(R.id.food_gallery_spinner);

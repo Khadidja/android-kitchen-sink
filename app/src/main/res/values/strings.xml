@@ -7,12 +7,13 @@
     <string name="title_activity_splash_screen">SplashScreenActivity</string>
     <string name="welcome_message">Welcome Message!!</string>
     <string name="logo_desc">app logo</string>
-    <string name="title_activity_splash_screen_result">SplashScreenResultActivity</string>
+    <string name="title_activity_splash_screen_result">European Countries</string>
     <string name="title">European Countries According to Yahoo:</string>
     <string name="title_activity_reusable_layout">ReusableLayoutActivity</string>
     <string name="reusable_layout">Reusable Layout with merge</string>
     <string name="next_desc">Next</string>
     <string name="prev_desc">Prev</string>
-    <string name="title_activity_pull_to_refresh">PullToRefreshActivity</string>
+    <string name="title_activity_pull_to_refresh">Refresh Date and Time</string>
     <string name="pull_to_refresh">Pull/Swipe To Refresh</string>
+
 </resources>

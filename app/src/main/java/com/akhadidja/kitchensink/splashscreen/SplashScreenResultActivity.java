@@ -6,16 +6,17 @@ import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.akhadidja.kitchensink.R;
-import com.akhadidja.kitchensink.splashscreen.DividerItemDecoration;
-import com.akhadidja.kitchensink.splashscreen.Place;
 
 public class SplashScreenResultActivity extends AppCompatActivity {
+
+    Toolbar toolbar;
 
     Place[] places;
     private RecyclerView mRecyclerView;
@@ -26,6 +27,8 @@ public class SplashScreenResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen_result);
+        toolbar = (Toolbar) findViewById(R.id.splash_result_toolbar);
+        setSupportActionBar(toolbar);
         Intent intent = getIntent();
         if(intent != null && intent.hasExtra(Intent.EXTRA_TEXT)){
             Parcelable [] parcelables = intent.getParcelableArrayExtra(Intent.EXTRA_TEXT);

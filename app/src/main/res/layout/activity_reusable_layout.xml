@@ -4,24 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
     tools:context="com.akhadidja.kitchensink.reusablelayout.ReusableLayoutActivity">
+
+    <include
+        android:id="@+id/reusable_toolbar"
+        layout="@layout/app_bar" />
 
     <com.akhadidja.kitchensink.reusablelayout.GallerySpinner
         android:id="@+id/pets_gallery_spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal" />
+        android:orientation="horizontal" />
 
     <com.akhadidja.kitchensink.reusablelayout.GallerySpinner
         android:id="@+id/food_gallery_spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingTop="10dp"
-        android:layout_gravity="center_horizontal" />
+        android:paddingTop="10dp" />
 
 </LinearLayout>
