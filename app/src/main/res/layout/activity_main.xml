@@ -33,4 +33,12 @@
         android:id="@+id/pull_to_refresh_button"
         android:layout_gravity="center_horizontal"
         android:onClick="showPullToRefreshActivity"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/navigation_drawer"
+        android:id="@+id/navigation_drawer_button"
+        android:layout_gravity="center_horizontal"
+        android:onClick="showNavigationDrawerActivity"/>
 </LinearLayout>

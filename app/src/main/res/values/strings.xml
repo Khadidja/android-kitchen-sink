@@ -16,4 +16,8 @@
     <string name="title_activity_pull_to_refresh">Refresh Date and Time</string>
     <string name="pull_to_refresh">Pull/Swipe To Refresh</string>
 
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="navigation_drawer">Navigation Drawer (Material Design)</string>
+
 </resources>

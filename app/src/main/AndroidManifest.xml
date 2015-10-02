@@ -37,6 +37,8 @@
             android:label="@string/title_activity_pull_to_refresh"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity android:name=".navigationdrawer.NavigationDrawerActivity" >
+        </activity>
     </application>
 
 </manifest>
