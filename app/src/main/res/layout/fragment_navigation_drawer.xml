@@ -1,13 +1,15 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.akhadidja.kitchensink.navigationdrawer.NavigationDrawerFragment"
-    android:background="@color/primary_light">
+    android:background="@color/primary_light"
+    tools:context="com.akhadidja.kitchensink.navigationdrawer.NavigationDrawerFragment">
 
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/navigation_drawer_recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_world" />
+        android:layout_height="wrap_content">
 
-</RelativeLayout>
+    </android.support.v7.widget.RecyclerView>
+
+</FrameLayout>
