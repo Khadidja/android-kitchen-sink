@@ -19,6 +19,7 @@
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
     <string name="navigation_drawer">Navigation Drawer (Material Design)</string>
+    <string name="volley"><![CDATA[Volley & Best Buy API]]></string>
     <string-array name="navigation_drawer_options">
         <item>Selection 1</item>
         <item>Selection 2</item>

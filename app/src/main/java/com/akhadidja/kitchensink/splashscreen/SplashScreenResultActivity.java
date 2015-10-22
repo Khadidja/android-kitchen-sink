@@ -17,11 +17,7 @@ import com.akhadidja.kitchensink.R;
 public class SplashScreenResultActivity extends AppCompatActivity {
 
     Toolbar toolbar;
-
     Place[] places;
-    private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,14 +32,14 @@ public class SplashScreenResultActivity extends AppCompatActivity {
             for (int i = 0; i < places.length; i++) {
                 places[i] = (Place) parcelables[i];
             }
-            mRecyclerView = (RecyclerView) findViewById(R.id.splash_recycler_view);
+            RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.splash_recycler_view);
             mRecyclerView.setHasFixedSize(true);
             RecyclerView.ItemDecoration itemDecoration =
                     new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST);
             mRecyclerView.addItemDecoration(itemDecoration);
-            mLayoutManager = new LinearLayoutManager(this);
+            RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
             mRecyclerView.setLayoutManager(mLayoutManager);
-            mAdapter = new SplashAdapter(places);
+            RecyclerView.Adapter mAdapter = new SplashAdapter(places);
             mRecyclerView.setAdapter(mAdapter);
         }
     }

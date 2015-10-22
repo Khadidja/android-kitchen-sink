@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="GETTY_API_KEY">
+        4rn8ue7tytskm3wg7zy4ykmp
+    </string>
+    <string name="GETTY_SECRET">
+        65gDRARm5sACApZJMJuxsDJ5wfpPPX6Yu4JjhTWh6c997
+    </string>
+    <string name="INSTAGRAM_CLIENT_ID">
+        46e6f481026b40748a84524ec5b4bc78
+    </string>
+    <string name="INSTAGRAM_SECRET">
+        1475d060a663413c9a2e6fcba1a13a4f
+    </string>
+
+    <string name="BEST_BUY_API_KEY">
+        6hmst2qtfkwwfbductqmubzf
+    </string>
+</resources>

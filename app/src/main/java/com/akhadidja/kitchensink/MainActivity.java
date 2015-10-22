@@ -11,6 +11,7 @@ import com.akhadidja.kitchensink.navigationdrawer.NavigationDrawerActivity;
 import com.akhadidja.kitchensink.pulltorefresh.PullToRefreshActivity;
 import com.akhadidja.kitchensink.reusablelayout.ReusableLayoutActivity;
 import com.akhadidja.kitchensink.splashscreen.SplashScreenActivity;
+import com.akhadidja.kitchensink.volley.VolleyActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -51,5 +52,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void showNavigationDrawerActivity(View view) {
         startActivity(new Intent(this, NavigationDrawerActivity.class));
+    }
+
+    public void showVolleyActivity(View view) {
+        startActivity(new Intent(this, VolleyActivity.class));
     }
 }
