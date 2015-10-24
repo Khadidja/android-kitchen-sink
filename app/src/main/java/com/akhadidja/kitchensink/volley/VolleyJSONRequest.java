@@ -4,6 +4,8 @@ import android.util.Log;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.RequestFuture;
 
@@ -15,10 +17,11 @@ import java.util.concurrent.TimeoutException;
 
 public class VolleyJSONRequest {
 
-    private static final long TIMEOUT = 30000;
+    private static final int TIMEOUT = 10000;
     private static final String LOG_TAG = VolleyJSONRequest.class.getSimpleName();
 
-    public static JSONObject response (RequestQueue requestQueue, String url){
+    public static JSONObject response (final OnVolleyErrorListener listener,
+                                       RequestQueue requestQueue, String url){
         JSONObject response = null;
         try {
             RequestFuture<JSONObject> requestFuture = RequestFuture.newFuture();
@@ -27,8 +30,12 @@ public class VolleyJSONRequest {
                     url,
                     null,
                     requestFuture,
-                    requestFuture);
-
+                    new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            listener.onVolleyError(error);
+                        }
+                    });
             requestQueue.add(request);
             response = requestFuture.get(TIMEOUT, TimeUnit.MILLISECONDS);
         } catch (InterruptedException e) {
